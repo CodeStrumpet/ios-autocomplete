@@ -65,12 +65,14 @@ IB_DESIGNABLE
 /// Set this if you need to show the suggestion table directly on the window(for example in case of a table it will look better on the window). The default value is NO
 @property(assign) IBInspectable BOOL showOnWindow;
 
-
 - (CGRect)getAutoCompleteInitialFrame;
 
 - (CGRect)getAutoCompleteTableViewFrameForNumberOfRows:(NSInteger)rows;
 
 - (CGRect)textAbsoluteFrame;
+
+// Use this to use a custom key (other then @"title")
+- (void)setSuggestionsLabelKey:(NSString *)key;
 
 @end
 

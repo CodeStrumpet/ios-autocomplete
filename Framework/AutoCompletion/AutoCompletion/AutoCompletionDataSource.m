@@ -8,6 +8,12 @@
 
 @implementation AutoCompletionDataSource
 
+- (instancetype)init {
+    if (self = [super init]) {
+        _suggetionsLabelKey = @"title";
+    }
+    return self;
+}
 
 #pragma mark - TableView Data Source
 
@@ -30,7 +36,7 @@
     }
     
     id object = [_suggestItems objectAtIndex:indexPath.row];
-    NSString *text = [object valueForKey:@"title"];
+    NSString *text = [object valueForKey:_suggetionsLabelKey];
     cell.textLabel.text = [NSString stringWithFormat:@"%@",text];
     UIFont *font = [UIFont fontWithName:@"FontAwesome" size:14];
     [cell.textLabel setFont:font];

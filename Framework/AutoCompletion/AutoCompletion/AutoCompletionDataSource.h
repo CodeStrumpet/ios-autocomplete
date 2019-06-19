@@ -13,4 +13,6 @@
 /// The items represented by this data source.
 @property (nonatomic, copy) NSArray *suggestItems;
 
+@property (nonatomic, strong) NSString *suggestionsLabelKey;
+
 @end

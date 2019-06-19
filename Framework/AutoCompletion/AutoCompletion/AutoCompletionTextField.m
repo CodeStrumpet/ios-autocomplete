@@ -184,6 +184,10 @@
     _animationDelegate = animationDelegate;
 }
 
+- (void)setSuggestionsLabelKey:(NSString *)key {
+    _dataSource.suggestionsLabelKey = key;
+}
+
 #pragma mark - Data Fetch
 
 - (void)reloadData
