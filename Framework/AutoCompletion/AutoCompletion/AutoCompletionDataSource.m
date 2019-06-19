@@ -10,7 +10,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        _suggetionsLabelKey = @"title";
+        _suggestionsLabelKey = @"title";
     }
     return self;
 }
