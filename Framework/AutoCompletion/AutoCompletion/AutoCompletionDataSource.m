@@ -36,7 +36,7 @@
     }
     
     id object = [_suggestItems objectAtIndex:indexPath.row];
-    NSString *text = [object valueForKey:_suggetionsLabelKey];
+    NSString *text = [object valueForKey:_suggestionsLabelKey];
     cell.textLabel.text = [NSString stringWithFormat:@"%@",text];
     UIFont *font = [UIFont fontWithName:@"FontAwesome" size:14];
     [cell.textLabel setFont:font];
