@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "AutoCompletion"
-s.version      = "1.2.1"
+s.version      = "1.2.2"
 s.summary      = "Autocomplete textfield."
 s.description  = "A framework which provides text field suggestions as a dropdown list. It is available with iOS 9 and later, Objective-C or Swift."
 s.homepage     = "https://github.com/3pillarlabs/ios-autocomplete"
